@@ -14,6 +14,7 @@
     <string name="city">City</string>
     <string name="state">State</string>
     <string name="zipcode">Zipcode</string>
+
     <string name="country">Country</string>
     <string name="date_of_birth">Date of Birth</string>
     <string name="age">Age</string>
@@ -186,6 +187,7 @@
     <string name="leave_management">Leave Management</string>
     <string name="help_center">Help Center</string>
 
+
     <string name="summary">Summary</string>
 
     <string name="total_counts">Total Counts</string>
@@ -243,7 +245,6 @@
 
 
     <string name="address_details">1-92, Kavuri Hills Rd, Kummari Basti, Vittal Rao \n Nagar, Madhapur, Hyderabad-500081</string>
-
     <string name="user_type">User Type</string>
 
     <string name="foe_caps">FOE</string>
@@ -265,7 +266,6 @@
     <string name="role">Role</string>
 
 
-
     <string name="update_profile">Update Clinic Profile</string>
     <string name="clinic_text">Clinic Name</string>
     <string name="people_clnic">People Care Wellness Center</string>
@@ -276,9 +276,6 @@
     <string name="email_text">lalithaged@gmail.com</string>
     <string name="logo">Logo</string>
     <string name="text_msg">Supported: JPG,JPEG,PNG,PDF,File should be maximum 5mb.</string>
-
-
-
 
 
 </resources>

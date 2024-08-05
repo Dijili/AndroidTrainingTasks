@@ -14,10 +14,7 @@
     <dimen name="search_image_button5_height">100dp</dimen>
     <dimen name="title_bar">50dp</dimen>
     <dimen name="padding_15dp">15dp</dimen>
-
     <dimen name="padding_3dp">3dp</dimen>
-
-
     <dimen name="editbox_left">80dp</dimen>
     <dimen name="editbox_right">100dp</dimen>
     <dimen name="editbox_bottom">10dp</dimen>
