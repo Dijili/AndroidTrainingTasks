@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/employee_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/employee_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_50" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employee_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_header_lyt" />
+
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</RelativeLayout>

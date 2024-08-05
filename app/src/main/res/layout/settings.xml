@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/feedback_bg"
+        android:padding="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/settings_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/drug_service_mapping_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_textview"
+            app:strokeColor="#DCDCDC">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_20sdp">
+
+
+                <TextView
+                    android:id="@+id/drug_service_mapping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/drug_service"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_7ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/product_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/product_category"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/drug_service_mapping" />
+
+
+                <TextView
+                    android:id="@+id/service_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/service_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/product_category_spinner"
+                    app:layout_constraintTop_toBottomOf="@id/drug_service_mapping" />
+
+
+                <FrameLayout
+                    android:id="@+id/product_category_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edit_boxes"
+                    app:layout_constraintEnd_toStartOf="@+id/service_name_spinner"
+                    app:layout_constraintStart_toStartOf="@+id/product_category"
+                    app:layout_constraintTop_toBottomOf="@+id/product_category"
+                    app:strokeColor="@color/grey">
+
+
+                    <Spinner
+                        android:id="@+id/productcategory_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/arrow_1"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp" />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/service_name_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/edit_boxes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/product_category_spinner"
+                    app:layout_constraintTop_toBottomOf="@+id/service_name"
+                    app:strokeColor="@color/grey">
+
+
+                    <Spinner
+                        android:id="@+id/servicename_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/arrow_1"
+                        android:entries="@array/service_name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp" />
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/time_slot_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drug_service_mapping_cardview"
+            app:strokeColor="#DCDCDC">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_20sdp">
+
+
+                <TextView
+                    android:id="@+id/Time_slot_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/time_slot_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_7ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+
+                    android:id="@+id/start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/start_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Time_slot_text" />
+
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/end_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/start_date_image"
+                    app:layout_constraintTop_toBottomOf="@id/Time_slot_text" />
+
+                <TextView
+                    android:id="@+id/time_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/time_interval"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/start_date_image" />
+
+
+                <TextView
+                    android:id="@+id/start_date_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edit_boxes"
+                    android:drawableEnd="@drawable/group__2_"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/end_date_image"
+                    app:layout_constraintStart_toStartOf="@+id/start_date"
+                    app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+
+                <TextView
+                    android:id="@+id/end_date_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/edit_boxes"
+                    android:drawableEnd="@drawable/group__2_"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/start_date_image"
+                    app:layout_constraintTop_toBottomOf="@+id/end_date" />
+
+
+                <TextView
+                    android:id="@+id/time_interval_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edit_boxes"
+                    android:drawableEnd="@drawable/vector__6_"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/start_date_image"
+                    app:layout_constraintStart_toStartOf="@+id/time_interval"
+                    app:layout_constraintTop_toBottomOf="@+id/time_interval" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

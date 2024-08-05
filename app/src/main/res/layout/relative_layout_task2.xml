@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/healthonus_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_view_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_healthonuslogo" />
+
+    <TextView
+        android:id="@+id/healthonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/healthonus_logo"
+        android:background="@color/peach"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="TRANSITION CARE"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/healthonus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_view_height"
+        android:layout_below="@+id/healthonus"
+        android:background="@color/lavender"
+        android:padding="10dp"
+        android:text="Our premier facility offers transitional care with modern equipment and in-house staff."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/search_image_button1"
+        android:layout_width="@dimen/button1_width"
+        android:layout_height="@dimen/button1_height"
+        android:layout_below="@+id/healthonus_text"
+        android:layout_alignParentStart="true"
+        android:background="@color/olive_green"
+        android:src="@android:drawable/ic_menu_search" />
+
+
+    <ImageButton
+        android:id="@+id/search_image_button2"
+        android:layout_width="@dimen/button2_width"
+        android:layout_height="@dimen/button2_width"
+        android:layout_below="@+id/healthonus_text"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/search_image_button1"
+        android:background="@color/peach"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/search_image_button3"
+        android:layout_width="@dimen/button3_width"
+        android:layout_height="@dimen/button3_height"
+        android:layout_below="@+id/search_image_button1"
+        android:background="@color/peach"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/search_image_button4"
+        android:layout_width="@dimen/button4_width"
+        android:layout_height="@dimen/button4_height"
+        android:layout_below="@+id/search_image_button2"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/search_image_button3"
+        android:background="@color/olive_green"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/search_image_button5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_image_button5_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/babypink"
+        android:src="@android:drawable/ic_search_category_default" />
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">HonoNow</string>
+    <string name="button_1">Button 1</string>
+    <string name="nursing_care">Nursing Care</string>
+    <string name="transitionCare_text">Our premier facility offers transitional care with modern equipment and in-house staff.</string>
+    <string name="new_registration_text">New Registration</string>
+    <string name="demographics_text">Demographics</string>
+    <string name="patient_information_text">Patient Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="country">Country</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="age">Age</string>
+    <string name="occupation">Occupation</string>
+    <string name="gender">Gender</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="single">Single</string>
+    <string name="married">Married</string>
+    <string name="divorced">Divorced</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="time">5:00 PM</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="your_string_here"> Accept terms and conditions.</string>
+    <string name="health_history"> Health History</string>
+    <string name="past_medical_history">Past Medical History</string>
+    <string name="any_medications">Currently taking any medications?</string>
+    <string name="registration_reason">Reason for patient registration</string>
+    <string name="nursing">Nursing</string>
+    <string name="physiotheraphy">Physiotheraphy</string>
+    <string name="doctor_consultation">Doctor Consultation</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="health_services">Health Services</string>
+    <string name="chief_complaints">Chief Complaints</string>
+    <string name="packages">Packages</string>
+    <string name="first_keypoint1">1. Comprehensive Physiotherapy session and formulation of individual plan.</string>
+    <string name="first_keypoint2">2. At least 1hour per session</string>
+    <string name="first_keypoint3">3. No free session</string>
+    <string name="sessions_30">30 Sessions</string>
+    <string name="sessions_15">15 Sessions</string>
+    <string name="employee_list">Employee List</string>
+    <string name="mobile_number_txt">Enter Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="please_sign">Please sign in to continue</string>
+    <string name="executive">Executive Login</string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="cancellation_reason">Reason for cancellation</string>
+    <string name="comments">Comments</string>
+    <string name="eligible_txtcontent">Eligible for Refund Amount Rs.500</string>
+    <string name="submit">Submit</string>
+    <string name="canceldialog_button">Cancel Appointment</string>
+    <string name="name">Name</string>
+    <string name="get_data">Get Data</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="enter_code_txt">Please enter the verification code sent to %s</string>
+    <string name="receive_otp">Didn\'t receive OTP? Resend</string>
+    <string name="done">Done</string>
+    <string name="user_id">UserID</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="mobile_no">MobileNo</string>
+    <string name="login">LOGIN</string>
+    <string name="kumari_ramajan">Kumari Ramajan</string>
+    <string name="user_details">#OP12346789 | F | 40yrs</string>
+    <string name="vitals_recorded">Vitals Recorded</string>
+    <string name="test_name_txt">Test Name</string>
+    <string name="code_txt">Code</string>
+    <string name="sample_txt">Sample</string>
+    <string name="code">S1279</string>
+    <string name="sample">Slit Skin</string>
+
+    <string name="heading">MVVM Architecture</string>
+    <string name="email_hint">Email ID</string>
+    <string name="password_hint">Password</string>
+    <string name="button_text">Log-In</string>
+
+    <string name="opid_txt">OPID</string>
+    <string name="opid">#OPID123456</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="mobile_txt">Mobile Number</string>
+    <string name="visit_reason">Reason for Visit</string>
+    <string name="service_name">Service Name</string>
+    <string name="mobile_num">+91 987654321</string>
+    <string name="neck_pain">Neck Pain</string>
+    <string name="spain_conditions">Spain Conditions</string>
+    <string name="physical_examination">Clinical/Physical Examination</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="treatment">Plan of Care/Treatment</string>
+    <string name="preventive_aspects">Preventive aspects(Whenever applicable)</string>
+    <string name="investigations">Investigations</string>
+    <string name="word_count">0/500</string>
+    <string name="care_clinic">Care Clinic</string>
+    <string name="clinic_address">KPHB,Hyderabad</string>
+    <string name="shyamala">Shyamala</string>
+    <string name="dharma_rao">Dharma Rao</string>
+
+    <string name="physiotherapist">Physiotherapist |</string>
+    <string name="logout"> Logout</string>
+
+    <string name="test_name">AFB Smear,Slit Skin Group:Microbiology,TAT:6hrs</string>
+    <string name="back_txt">Back</string>
+    <string name="save_btn">Save</string>
+    <string name="hou_clinic"> HealthOnUs Clinic</string>
+
+
+    <string name="id">ID</string>
+    <string name="id_txt">#IDIHOU123</string>
+
+
+    <string name="smear">Smear,</string>
+    <string name="pus">Pus,</string>
+    <string name="code_name">Code:S1283,</string>
+    <string name="group">Group:Microbiology,</string>
+    <string name="tat">TAT:6hrs4321</string>
+
+    <string name="completed_caps">COMPLETED</string>
+    <string name="samples_collected">SAMPLES COLLECTED</string>
+
+    <string name="status">Status</string>
+    <string name="labtest_details_txt">Smear,Pus,Code:S1283,Group:Microbiology,TAT:6hrs4321</string>
+    <string name="upload_msg">Supported: JPG,JPEG,PNG,PDF,File size should be maximum 5mb.</string>
+    <string name="upload_docs">Upload Documents</string>
+    <string name="cancel">X</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="documents">Documents</string>
+
+
+    <string name="mohan">Mohan Kumar Bommana</string>
+    <string name="gender_yrs">Male 48yrs| </string>
+    <string name="schedule">Schedule Date on: 12th June 2024, 11:00AM</string>
+    <string name="address_text">Kavurihills, 1150-1/2,Hyderabad - 500081</string>
+    <string name="opid_text">#OP1234567890</string>
+
+    <string name="rajkumar">Rajkumar</string>
+
+    <string name="foe">Front Office Exec|</string>
+
+    <string name="initial_assessment">Initial Assessment</string>
+    <string name="sessions">Sessions</string>
+
+    <string name="upload_prescription">Upload Prescription</string>
+
+    <string name="uhid_txt">UHID</string>
+    <string name="uhid">UHDIHOU123</string>
+
+    <string name="continue_txt">Continue</string>
+
+    <string name="verified">Verified</string>
+
+    <string name="verified_msg">You have successfully verified your account. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="clinic_profile">Clinic Profile</string>
+    <string name="hou">HealthOnUs</string>
+    <string name="shiva_kumar">Shiva Kumar</string>
+
+    <string name="people_care">People Care Wellness Center</string>
+
+    <string name="clinic_admin">Clinic Admin |</string>
+
+    <string name="madhapur">Madhapur</string>
+
+    <string name="update">UPDATE</string>
+
+    <string name="hou_network">In HOU Network</string>
+
+    <string name="clinic_profiles">Clinic Profiles</string>
+
+    <string name="user_management">User Management</string>
+    <string name="doc_consultation">Doc Consultation Config</string>
+    <string name="leave_management">Leave Management</string>
+    <string name="help_center">Help Center</string>
+
+    <string name="summary">Summary</string>
+
+    <string name="total_counts">Total Counts</string>
+    <string name="total_clinics">Total Clinics</string>
+    <string name="total_doctors">Total Doctors</string>
+    <string name="total_users">Total Users</string>
+    <string name="total_nurses">Total Nurses</string>
+
+    <string name="total_bookings">Total Bookings</string>
+
+    <string name="ongoing">Ongoing</string>
+    <string name="completed">Completed</string>
+    <string name="bookings">100000 \n Bookings</string>
+
+    <string name="add_users">Add Users</string>
+    <string name="add_clinic">Add Clinic</string>
+
+
+    <string name="user_name">USER NAME</string>
+    <string name="role_caps">ROLE</string>
+    <string name="physiotherapist_caps">PHYSIOTHERAPIST</string>
+    <string name="edit_caps">EDIT</string>
+    <string name="delete_caps">DELETE</string>
+    <string name="lohit">Lohit Kumar Dokula</string>
+
+
+    <string name="drug_service">Drug Service Mapping</string>
+    <string name="product_category">Product Category</string>
+    <string name="service_name_txt">Service Name</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="time_slot">Time Slot</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="slot_interval">Time Slot Interval</string>
+
+    <string name="remove_room">Are you sure remove the room?</string>
+
+
+    <string name="consult_board">Consultation Board</string>
+    <string name="floor">Floor</string>
+    <string name="add_room">ADD ROOM</string>
+    <string name="add_room_txt">Add Room</string>
+
+    <string name="floor1">Floor1</string>
+
+
+    <string name="select_floor">Select Floor</string>
+    <string name="room_type">Room Type</string>
+    <string name="room_no">Room No.</string>
+
+    <string name="time_interval">Time Slot Interval</string>
+    <string name="time_slot_text">Time Slot</string>
+
+
+    <string name="address_details">1-92, Kavuri Hills Rd, Kummari Basti, Vittal Rao \n Nagar, Madhapur, Hyderabad-500081</string>
+
+    <string name="user_type">User Type</string>
+
+    <string name="foe_caps">FOE</string>
+    <string name="nursing_specialist">Nursing Specialist</string>
+    <string name="doctor">Doctor</string>
+
+
+    <string name="first_nme">First Name</string>
+    <string name="last_nme">Last Name</string>
+
+    <string name="experience">Experience</string>
+
+    <string name="language_knwn">Language Known</string>
+
+    <string name="prfl_url">Profile Url</string>
+
+    <string name="qualification">Qualification</string>
+
+    <string name="role">Role</string>
+
+
+
+    <string name="update_profile">Update Clinic Profile</string>
+    <string name="clinic_text">Clinic Name</string>
+    <string name="people_clnic">People Care Wellness Center</string>
+    <string name="network">Is In HOU Network ?</string>
+    <string name="location"> Location</string>
+    <string name="mobile_text">Mobile Number</string>
+    <string name="Email">Email</string>
+    <string name="email_text">lalithaged@gmail.com</string>
+    <string name="logo">Logo</string>
+    <string name="text_msg">Supported: JPG,JPEG,PNG,PDF,File should be maximum 5mb.</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        app:cardCornerRadius="@dimen/margin_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10">
+
+
+            <TextView
+                android:id="@+id/uhid_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/uhid_txt"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/opid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/uhid"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/uhid_txt"
+                app:layout_constraintTop_toBottomOf="@+id/uhid_txt" />
+
+            <TextView
+                android:id="@+id/patient_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_30"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/patient_name"
+                android:textColor="@color/grey"
+
+                android:textSize="10sp"
+
+                app:layout_constraintStart_toEndOf="@+id/opid"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/kumari_ramajan"
+                android:textColor="@color/black"
+
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/patient_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_txt" />
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:fontFamily="@font/poppins_regular"
+                android:text="|  Male  |"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/patient_name"
+                app:layout_constraintTop_toBottomOf="@+id/patient_txt" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:fontFamily="@font/poppins_regular"
+                android:text="45yrs"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/patient_txt" />
+
+
+            <TextView
+                android:id="@+id/mobile_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/mobile_txt"
+                android:textSize="10sp"
+
+
+                app:layout_constraintStart_toStartOf="@+id/opid"
+                app:layout_constraintTop_toBottomOf="@+id/opid"
+
+
+                />
+
+            <TextView
+                android:id="@+id/mobile_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/mobile_num"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+
+
+                app:layout_constraintStart_toStartOf="@+id/opid"
+
+                app:layout_constraintTop_toBottomOf="@+id/mobile_txt"
+
+
+                />
+
+            <TextView
+                android:id="@+id/visit_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/visit_reason"
+                android:textSize="10sp"
+
+
+                app:layout_constraintStart_toStartOf="@+id/patient_name"
+                app:layout_constraintTop_toBottomOf="@+id/patient_name"
+
+                />
+
+            <TextView
+                android:id="@+id/neck_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/neck_pain"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="@+id/visit_reason"
+                app:layout_constraintTop_toBottomOf="@+id/visit_reason"
+
+                />
+
+            <TextView
+                android:id="@+id/service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/padding_20"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/service_name"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/visit_reason"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+
+            <TextView
+                android:id="@+id/spain_cdtns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/spain_conditions"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/service_name"
+                app:layout_constraintTop_toBottomOf="@+id/service_name"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

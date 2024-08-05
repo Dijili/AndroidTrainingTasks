@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/employee_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/employee_list">
+
+    <ImageView
+        android:id="@+id/employee_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:src="@drawable/employee_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/employee_image"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@+id/employee_image"
+        android:text="name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/employee_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/employee_name"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@id/employee_image"
+        android:text="rollId"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/employee_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_weight="1"
+        android:background="#009300"
+        android:text="Add"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_button"
+        android:layout_alignEnd="@+id/employee_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:background="#eb4034"
+        android:text="Remove"
+        android:textColor="@color/white"
+       />
+
+</RelativeLayout>

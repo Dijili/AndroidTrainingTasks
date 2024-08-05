@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/feedback_bg">
+
+        <include
+            android:id="@+id/hou_header"
+            layout="@layout/hou_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/header_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20"
+            app:layout_constraintStart_toStartOf="@+id/hou_header"
+            app:layout_constraintTop_toBottomOf="@+id/hou_header" />
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_20"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/header_recyclerview"
+            app:layout_constraintTop_toBottomOf="@+id/header_recyclerview" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/drugservice_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_20"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/padding_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drug_service"
+                    android:textColor="@color/black"
+
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/product_cat_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/product_category"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/product_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/product_editbox"
+                    app:layout_constraintEnd_toStartOf="@+id/service_name_fl"
+                    app:layout_constraintStart_toStartOf="@+id/product_cat_item"
+                    app:layout_constraintTop_toBottomOf="@+id/product_cat_item">
+
+                    <Spinner
+                        android:id="@+id/product_cat_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:background="@drawable/dropdown_selector"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_15dp" />
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:id="@+id/service_cat_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/service_name"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/product_edit"
+                    app:layout_constraintTop_toTopOf="@+id/product_cat_item" />
+
+                <FrameLayout
+                    android:id="@+id/service_name_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/product_editbox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/product_edit"
+                    app:layout_constraintTop_toBottomOf="@+id/service_cat_item">
+
+                    <Spinner
+                        android:id="@+id/service_name_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:background="@drawable/dropdown_selector"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_15dp" />
+
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timeslot_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_20"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="@id/drugservice_card"
+            app:layout_constraintTop_toBottomOf="@+id/drugservice_card">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/padding_20">
+
+
+                <TextView
+                    android:id="@+id/time_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/time_slot"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/start_date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/start_date"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/time_slot"
+                    app:layout_constraintTop_toBottomOf="@+id/time_slot" />
+
+                <FrameLayout
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/product_editbox"
+                    app:layout_constraintEnd_toStartOf="@+id/end_date"
+                    app:layout_constraintStart_toStartOf="@+id/start_date_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/start_date_txt">
+
+                    <Spinner
+                        android:id="@+id/start_date_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:background="@drawable/dropdown_selector"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_15dp" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/end_date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/end_date"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/start_date"
+                    app:layout_constraintTop_toBottomOf="@+id/time_slot" />
+
+
+                <FrameLayout
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/product_editbox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/start_date"
+                    app:layout_constraintTop_toBottomOf="@+id/end_date_txt">
+
+                    <Spinner
+                        android:id="@+id/end_date_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_20"
+
+                        android:background="@drawable/dropdown_selector"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_15dp" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/slot_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/slot_interval"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/start_date"
+                    app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+
+                <FrameLayout
+                    android:id="@+id/slot_interval_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/product_editbox"
+
+                    app:layout_constraintStart_toStartOf="@+id/slot_interval"
+                    app:layout_constraintTop_toBottomOf="@+id/slot_interval">
+
+                    <Spinner
+                        android:id="@+id/slot_interval_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:background="@drawable/dropdown_selector"
+                        android:entries="@array/product_category"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_15dp" />
+
+                </FrameLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/dimen_8dp">
+
+    <Space
+        android:id="@+id/logo_space_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/login_logo_view"
+        android:layout_width="@dimen/dimen_144dp"
+        android:layout_height="@dimen/dimen_74dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_hv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_space_view" />
+
+
+    <Space
+        android:id="@+id/doctor_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo_view" />
+
+
+    <TextView
+        android:id="@+id/executive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/executive"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_view" />
+
+
+    <TextView
+        android:id="@+id/please_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:text="@string/please_sign"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/executive" />
+
+    <Space
+        android:id="@+id/signin_space_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/please_signin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

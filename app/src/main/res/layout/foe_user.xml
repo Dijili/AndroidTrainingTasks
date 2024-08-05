@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/user_type"
+                android:textSize="@dimen/_7ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/foe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/foe_editbox"
+                android:text="@string/foe_caps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/user_type"
+                app:layout_constraintTop_toBottomOf="@+id/user_type" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nursing_specialist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/nursingspecialist_edittextbox"
+                android:text="@string/nursing_specialist"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_shade"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toEndOf="@+id/foe"
+                app:layout_constraintTop_toBottomOf="@+id/user_type" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/doctor_editbox"
+                android:text="@string/doctor"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_shade"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toEndOf="@+id/nursing_specialist"
+                app:layout_constraintTop_toBottomOf="@+id/user_type" />
+
+            <TextView
+                android:id="@+id/first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/first_nme"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/foe"
+                app:layout_constraintTop_toBottomOf="@+id/foe" />
+
+
+            <EditText
+                android:id="@+id/firstnme_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/edit_boxes"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                app:layout_constraintEnd_toStartOf="@+id/lastnme_edit"
+                app:layout_constraintStart_toStartOf="@+id/first_name"
+                app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+
+            <TextView
+                android:id="@+id/last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/last_nme"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/firstnme_edit"
+                app:layout_constraintTop_toBottomOf="@+id/foe" />
+
+
+            <EditText
+                android:id="@+id/lastnme_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/edit_boxes"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/firstnme_edit"
+                app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/firstnme_edit"
+                app:layout_constraintTop_toBottomOf="@+id/firstnme_edit" />
+
+            <EditText
+                android:id="@+id/email_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/edit_boxes"
+                android:paddingStart="@dimen/_2sdp"
+
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                app:layout_constraintEnd_toStartOf="@+id/mbl_num_edit"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/mbl_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/mobile_txt"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/lastnme_edit"
+                app:layout_constraintTop_toBottomOf="@+id/lastnme_edit" />
+
+            <EditText
+                android:id="@+id/mbl_num_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/edit_boxes"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/email_edit"
+                app:layout_constraintTop_toBottomOf="@+id/mbl_num" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/email_edit"
+                app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/male_button"
+                android:text="@string/male"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/female_button"
+                android:text="@string/female"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toEndOf="@+id/male"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/experience"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/mbl_num_edit"
+                app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+            <FrameLayout
+                android:id="@+id/experience_fml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/edit_boxes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/experience"
+                app:layout_constraintTop_toBottomOf="@+id/experience"
+                app:strokeColor="@color/grey">
+
+                <Spinner
+                    android:id="@+id/experience_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arrow_1"
+                    android:entries="@array/product_category"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/language_knwn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/language_knwn"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintStart_toStartOf="@+id/male"
+                app:layout_constraintTop_toBottomOf="@+id/male" />
+
+
+            <FrameLayout
+                android:id="@+id/language_knwn_fml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/edit_boxes"
+                app:layout_constraintEnd_toStartOf="@+id/prfl_edit"
+                app:layout_constraintStart_toStartOf="@+id/language_knwn"
+                app:layout_constraintTop_toBottomOf="@+id/language_knwn"
+                app:strokeColor="@color/grey">
+
+
+                <Spinner
+                    android:id="@+id/language_knwn_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arrow_1"
+                    android:entries="@array/product_category"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/profile_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/prfl_url"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/experience_fml"
+                app:layout_constraintTop_toBottomOf="@+id/experience_fml" />
+
+            <EditText
+                android:id="@+id/prfl_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_boxes"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_4ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/email_edit"
+                app:layout_constraintTop_toBottomOf="@+id/profile_url" />
+
+            <TextView
+                android:id="@+id/qualification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/qualification"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/language_knwn_fml"
+                app:layout_constraintTop_toBottomOf="@+id/language_knwn_fml" />
+
+
+            <FrameLayout
+                android:id="@+id/qualification_fml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/edit_boxes"
+                app:layout_constraintEnd_toStartOf="@+id/prfl_edit"
+                app:layout_constraintStart_toStartOf="@+id/qualification"
+                app:layout_constraintTop_toBottomOf="@+id/qualification"
+                app:strokeColor="@color/grey">
+
+
+                <Spinner
+                    android:id="@+id/qualification_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arrow_1"
+                    android:entries="@array/product_category"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/role"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/prfl_edit"
+                app:layout_constraintTop_toBottomOf="@+id/language_knwn_fml" />
+
+
+            <FrameLayout
+                android:id="@+id/role_fml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edit_boxes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/qualification_fml"
+                app:layout_constraintStart_toStartOf="@+id/role"
+                app:layout_constraintTop_toBottomOf="@+id/role"
+                app:strokeColor="@color/grey">
+
+
+                <Spinner
+                    android:id="@+id/role_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arrow_1"
+                    android:entries="@array/product_category"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/bottom_card"
+            layout="@layout/feedback_bottomcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>

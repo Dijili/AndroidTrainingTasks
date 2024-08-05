@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feedback_header">
+
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_20"
+        android:background="@drawable/user_profile_svgrepo_com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_img" />
+
+    <TextView
+        android:id="@+id/care_clinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_20"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/hou_clinic"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/header_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/clinic_address"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/header_img"
+        app:layout_constraintTop_toBottomOf="@+id/care_clinic" />
+
+
+    <TextView
+        android:id="@+id/dharmarao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_20"
+        android:layout_marginTop="@dimen/padding_20"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/dharma_rao"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/physiotherapist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/physiotherapist"
+        android:textColor="@color/grey_white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/dharmarao"
+        app:layout_constraintTop_toBottomOf="@+id/dharmarao" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/logout"
+        android:textColor="@color/rust"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/physiotherapist"
+        app:layout_constraintTop_toBottomOf="@+id/dharmarao" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,581 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_template"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/new_registration_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/padding_10"
+            android:text="@string/new_registration_text"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/demographics_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/padding_10"
+            android:text="@string/demographics_text"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/patient_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_template"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/patient_information_text"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/user_profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_information"
+        android:src="@drawable/user_profile" />
+
+    <!-- Semicolons -->
+    <TextView
+        android:id="@+id/semicolon_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignBaseline="@+id/label_firstname"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/semicolon_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_firstname"
+        android:layout_alignBaseline="@+id/label_lastname"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_lastname"
+        android:layout_alignBaseline="@+id/label_email"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_email"
+        android:layout_alignBaseline="@+id/label_phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_phoneNumber"
+        android:layout_alignBaseline="@+id/label_address"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_address"
+        android:layout_alignBaseline="@+id/label_city"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_city"
+        android:layout_alignBaseline="@+id/label_state"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_state"
+        android:layout_alignBaseline="@+id/label_zipcode"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_zipcode"
+        android:layout_alignBaseline="@+id/label_country"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_country"
+        android:layout_alignBaseline="@+id/label_dateOfBirth"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_dateOfBirth"
+        android:layout_alignBaseline="@+id/label_age"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_age"
+        android:layout_alignBaseline="@+id/label_occupation"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_occupation"
+        android:layout_alignBaseline="@+id/label_gender"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_maritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_gender"
+        android:layout_alignBaseline="@+id/label_maritalStatus"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <!-- Form fields -->
+    <TextView
+        android:id="@+id/label_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_firstname"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_lastname"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_phoneNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_address"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/city"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_city"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/state"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_state"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/zipcode"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_zipcode"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/country"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_country"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_of_birth"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_dateOfBirth"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_age"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/occupation"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_occupation"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_maritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gender"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/marital_status"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <!-- Filled form fields -->
+
+
+    <TextView
+        android:id="@+id/firstname_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignBaseline="@+id/semicolon_firstname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_firstname"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lastname_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname_info"
+        android:layout_alignBaseline="@+id/semicolon_lastname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_lastname"
+
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/email_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname_info"
+        android:layout_alignBaseline="@+id/semicolon_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_email"
+
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/phonenumber_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_info"
+        android:layout_alignBaseline="@+id/semicolon_phoneNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_phoneNumber"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/address_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonenumber_info"
+        android:layout_alignBaseline="@+id/semicolon_address"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_address"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/city_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_info"
+        android:layout_alignBaseline="@+id/semicolon_city"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_city"
+
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/state_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_info"
+        android:layout_alignBaseline="@+id/semicolon_state"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_state"
+
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/zipcode_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state_info"
+        android:layout_alignBaseline="@+id/semicolon_zipcode"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_zipcode"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/country_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipcode_info"
+        android:layout_alignBaseline="@+id/semicolon_country"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_country"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dateofbirth_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_info"
+        android:layout_alignBaseline="@+id/semicolon_dateOfBirth"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_dateOfBirth"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/age_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateofbirth_info"
+        android:layout_alignBaseline="@+id/semicolon_age"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_age"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/occupation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_info"
+        android:layout_alignBaseline="@+id/semicolon_occupation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_occupation"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/gender_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/occupation_info"
+        android:layout_alignBaseline="@+id/semicolon_gender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_gender"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/marital_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_info"
+        android:layout_alignBaseline="@+id/semicolon_maritalStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_maritalStatus"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

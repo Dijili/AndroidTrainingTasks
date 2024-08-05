@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/student_light_skin_tone_svgrepo_com" />
+
+    <!--    Semicolons-->
+
+    <TextView
+        android:id="@+id/semicolon_studentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignBaseline="@+id/label_studentname"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/semicolon_rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semicolon_studentname"
+        android:layout_alignBaseline="@+id/label_rollno"
+        android:layout_centerHorizontal="true"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <!-- Form fields -->
+    <TextView
+        android:id="@+id/label_studentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/label_rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_studentname"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Roll No"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <!-- Filled form fields -->
+
+    <TextView
+        android:id="@+id/label_studentname_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_alignBaseline="@+id/semicolon_studentname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_studentname"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rollno_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_studentname_info"
+        android:layout_alignBaseline="@+id/semicolon_rollno"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/semicolon_rollno"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

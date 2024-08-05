@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="occupation_list">
+        <item>IT Employee</item>
+        <item>Doctor</item>
+        <item>Farmer</item>
+        <item>Goldsmith</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>India</item>
+        <item>US</item>
+        <item>Australia</item>
+        <item>Belgium</item>
+    </string-array>
+    <string-array name="reasons">
+        <item></item>
+        <item>Timings not suitable</item>
+        <item>Doctor not available</item>
+        <item>Other issue</item>
+    </string-array>
+
+
+    <string-array name="product_category">
+        <item>Select</item>
+        <item>Product1</item>
+        <item>Product2</item>
+        <item>Product3</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Select</item>
+        <item>Completed</item>
+        <item>Samples Collected</item>
+
+    </string-array>
+
+
+    <string-array name="floor">
+        <item>Select</item>
+        <item>Floor1</item>
+        <item>Floor2</item>
+        <item>Floor3</item>
+        <item>Floor4</item>
+
+
+    </string-array>
+
+
+    <string-array name="array_technology">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Php</item>
+        <item>Hadoop</item>
+        <item>Sap</item>
+        <item>Python</item>
+        <item>Ajax</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>.Net</item>
+        <item>Perl</item>
+        <!--                <item>Android</item>-->
+        <!--                <item>Java</item>-->
+        <!--                <item>Php</item>-->
+        <!--                <item>Hadoop</item>-->
+        <!--                <item>Sap</item>-->
+        <!--                <item>Python</item>-->
+        <!--                <item>Ajax</item>-->
+        <!--                <item>C++</item>-->
+        <!--                <item>Ruby</item>-->
+        <!--                <item>Rails</item>-->
+        <!--                <item>.Net</item>-->
+        <!--                <item>Perl</item>-->
+
+    </string-array>
+
+
+    <string-array name="room_type">
+        <item>Room1</item>
+        <item>Room2</item>
+
+    </string-array>
+
+    <string-array name="room_number">
+        <item>207</item>
+        <item>202</item>
+        <item>303</item>
+
+    </string-array>
+
+    <string-array name="service_name">
+        <item>Service 1</item>
+        <item>Service 2</item>
+        <item>Service 3</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Location 1</item>
+        <item>Location 2</item>
+        <item>Location 3</item>
+    </string-array>
+
+</resources>

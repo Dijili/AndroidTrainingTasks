@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/feedback_bg">
+
+
+        <TextView
+            android:id="@+id/add_room_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/add_room_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/vector__5_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/select_floor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/select_floor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_room_text" />
+
+
+        <TextView
+            android:id="@+id/room_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/room_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintStart_toEndOf="@+id/select_floor_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/add_room_text" />
+
+
+        <FrameLayout
+            android:id="@+id/select_floor_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/edit_boxes"
+            app:layout_constraintEnd_toStartOf="@+id/room_type_spinner"
+            app:layout_constraintStart_toStartOf="@+id/select_floor"
+            app:layout_constraintTop_toBottomOf="@+id/select_floor"
+            app:strokeColor="@color/grey">
+
+
+            <Spinner
+                android:id="@+id/floor_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_1"
+                android:entries="@array/floor"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/room_type_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/edit_boxes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/select_floor_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/room_type"
+            app:strokeColor="@color/grey">
+
+
+            <Spinner
+                android:id="@+id/roomtype_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_1"
+                android:entries="@array/room_type"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/room_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/room_no"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/room_type_spinner" />
+
+
+        <FrameLayout
+            android:id="@+id/room_number_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/edit_boxes"
+            app:layout_constraintEnd_toEndOf="@+id/select_floor_spinner"
+            app:layout_constraintStart_toStartOf="@+id/room_number"
+            app:layout_constraintTop_toBottomOf="@+id/room_number"
+            app:strokeColor="@color/grey">
+
+
+            <Spinner
+                android:id="@+id/roomnumber_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_1"
+                android:entries="@array/room_number"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp" />
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/room_number_spinner" />
+
+
+        <Space
+            android:id="@+id/logo_space_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/save_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

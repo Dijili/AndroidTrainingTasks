@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_20"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/summary"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/totalcounts_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_20"
+            app:layout_constraintEnd_toStartOf="@+id/totalbookings_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:padding="@dimen/padding_20">
+
+                <TextView
+                    android:id="@+id/total_counts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/total_counts"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/clinic_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_5"
+                    app:layout_constraintEnd_toStartOf="@+id/doctor_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/total_counts">
+
+
+                    <ImageView
+                        android:id="@+id/totalclinics_img"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:src="@drawable/clinic_medical_svgrepo_com" />
+
+
+                    <TextView
+                        android:id="@+id/clinic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_clinics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/total_clinics"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_5ssp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/users_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/nurse_info"
+                    app:layout_constraintStart_toStartOf="@+id/clinic_info"
+                    app:layout_constraintTop_toBottomOf="@+id/clinic_info">
+
+
+                    <ImageView
+                        android:id="@+id/users_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:src="@drawable/group__1_" />
+
+                    <TextView
+                        android:id="@+id/users_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="150"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_users"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_20"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/total_users"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_5ssp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/doctor_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:layout_marginEnd="@dimen/padding_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/clinic_info"
+                    app:layout_constraintTop_toBottomOf="@+id/total_counts">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:src="@drawable/vector__1_"
+                        app:layout_constraintStart_toEndOf="@+id/totalclinics_img"
+                        app:layout_constraintTop_toBottomOf="@+id/total_counts" />
+
+
+                    <TextView
+                        android:id="@+id/doctor_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_doctors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/total_doctors"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_5ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nurse_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:layout_marginEnd="@dimen/padding_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/users_info"
+                    app:layout_constraintTop_toBottomOf="@+id/doctor_info">
+
+
+                    <ImageView
+                        android:id="@+id/nurse_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_20"
+                        android:src="@drawable/vector__2_"
+                        app:layout_constraintStart_toEndOf="@+id/totalclinics_img"
+                        app:layout_constraintTop_toBottomOf="@+id/total_counts" />
+
+
+                    <TextView
+                        android:id="@+id/nurse_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_3dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/total_nurse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/total_nurses"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_5ssp" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/totalbookings_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/padding_20"
+            android:layout_marginEnd="@dimen/padding_20"
+            app:layout_constraintBottom_toBottomOf="@+id/totalcounts_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/totalcounts_card"
+            app:layout_constraintTop_toTopOf="@+id/totalcounts_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/margin_5"
+
+                >
+
+                <TextView
+                    android:id="@+id/total_bookings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_10"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/total_bookings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:indeterminateOnly="false"
+                    android:progress="65"
+                    android:progressDrawable="@drawable/circle_progressbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/total_bookings" />
+
+                <TextView
+                    android:id="@+id/bookings_count"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/bookings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_4ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/progressbar"
+                    app:layout_constraintEnd_toEndOf="@id/progressbar"
+                    app:layout_constraintStart_toStartOf="@id/progressbar"
+                    app:layout_constraintTop_toTopOf="@+id/progressbar" />
+
+
+                <CheckBox
+                    android:id="@+id/completed_chk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:buttonTint="@color/submit_blue"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/padding_20"
+                    android:text="@string/completed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_5ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/ongoing_chk"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+                <CheckBox
+                    android:id="@+id/ongoing_chk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:buttonTint="@color/light_orange"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/padding_20"
+                    android:text="@string/ongoing"
+                    android:textSize="@dimen/_5ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/completed_chk"
+                    app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

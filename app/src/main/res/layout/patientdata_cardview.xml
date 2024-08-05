@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_20"
+            app:cardCornerRadius="@dimen/margin_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/kumari_ramajan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/user_details"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="@dimen/margin_10"-->
+                <!--                    android:text="@string/user_details"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="15sp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:layout_constraintStart_toStartOf="@+id/user_name"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/user_name" />-->
+
+                <TextView
+                    android:id="@+id/opid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="#OP1234679"
+                    android:textColor="@color/rust"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="|  F  |"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/opid"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="40yrs"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/gender"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+                <ImageView
+                    android:id="@+id/capsulex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/pills_svgrepo_com"
+                    app:layout_constraintStart_toStartOf="@id/opid"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <TextView
+                    android:id="@+id/x1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="x1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_weight="0.75"
+                    app:layout_constraintStart_toEndOf="@+id/capsulex1"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <ImageView
+                    android:id="@+id/capsulex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/pills_svgrepo_com"
+                    app:layout_constraintStart_toEndOf="@+id/x1"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <TextView
+                    android:id="@+id/x2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="x2"
+                    android:textColor="@color/black"
+
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_weight="0.75"
+                    app:layout_constraintStart_toEndOf="@+id/capsulex2"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <ImageView
+                    android:id="@+id/capsulex3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/pills_svgrepo_com"
+                    app:layout_constraintStart_toEndOf="@+id/x2"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <TextView
+                    android:id="@+id/x0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="x0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_weight="0.75"
+                    app:layout_constraintStart_toEndOf="@+id/capsulex3"
+                    app:layout_constraintTop_toBottomOf="@+id/opid" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/vitalsrecorded_btn"
+                    android:text="@string/vitals_recorded"
+                    android:textAllCaps="false"
+                    android:textColor="@color/violet"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_50" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_header_lyt">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/patient_info_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_header_lyt">
+
+            <TextView
+                android:id="@+id/patient_information_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/patient_information_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/userprofile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patient_information_txt" />
+
+            <TextView
+                android:id="@+id/semicolon_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/firstname_info"
+                app:layout_constraintStart_toEndOf="@id/firstname_txt"
+                app:layout_constraintTop_toBottomOf="@id/userprofile_image"
+                app:layout_constraintTop_toTopOf="@+id/firstname_txt"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/firstname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/first_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userprofile_image" />
+
+            <TextView
+                android:id="@+id/semicolon_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_firstname"
+                app:layout_constraintTop_toBottomOf="@id/firstname_txt"
+                app:layout_constraintTop_toTopOf="@id/lastname_txt"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/lastname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/last_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstname_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_lastname"
+                app:layout_constraintTop_toTopOf="@id/email_txt" />
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastname_txt" />
+
+            <TextView
+                android:id="@+id/semicolon_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_email"
+                app:layout_constraintTop_toTopOf="@id/phonenumber_txt" />
+
+            <TextView
+                android:id="@+id/phonenumber_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_txt" />
+
+            <TextView
+                android:id="@+id/semicolon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_phonenumber"
+                app:layout_constraintTop_toTopOf="@id/address_txt" />
+
+
+            <TextView
+                android:id="@+id/address_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumber_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_address"
+                app:layout_constraintTop_toTopOf="@id/city_txt" />
+
+            <TextView
+                android:id="@+id/city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/city"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_txt" />
+
+            <TextView
+                android:id="@+id/semicolon_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_city"
+                app:layout_constraintTop_toTopOf="@id/state_txt"
+
+                />
+
+            <TextView
+                android:id="@+id/state_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/state"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_txt" />
+
+            <TextView
+                android:id="@+id/semicolon_zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_state"
+                app:layout_constraintTop_toTopOf="@id/zipcode_txt" />
+
+            <TextView
+                android:id="@+id/zipcode_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/zipcode"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/state_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_zipcode"
+                app:layout_constraintTop_toTopOf="@id/country_txt"
+                />
+
+            <TextView
+                android:id="@+id/country_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zipcode_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_country"
+                app:layout_constraintTop_toTopOf="@id/dob_txt"
+
+                />
+
+            <TextView
+                android:id="@+id/dob_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_dob"
+                app:layout_constraintTop_toTopOf="@id/age_txt"
+
+                />
+
+            <TextView
+                android:id="@+id/age_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/age"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dob_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_age"
+                app:layout_constraintTop_toTopOf="@id/occupation_txt"
+
+                />
+
+
+            <TextView
+                android:id="@+id/occupation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/occupation"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_occupation"
+                app:layout_constraintTop_toTopOf="@id/gender_txt"
+                />
+
+
+            <TextView
+                android:id="@+id/gender_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/occupation_txt" />
+
+
+            <TextView
+                android:id="@+id/semicolon_maritalstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/semicolon_gender"
+                app:layout_constraintTop_toTopOf="@id/maritalstatus_txt"
+
+                />
+
+            <TextView
+                android:id="@+id/maritalstatus_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/marital_status"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_txt" />
+
+
+            <!--            filled form fields-->
+            <TextView
+                android:id="@+id/firstname_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="firstname"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/semicolon_firstname"
+                app:layout_constraintTop_toBottomOf="@id/userprofile_image"
+                app:layout_constraintTop_toTopOf="@+id/semicolon_firstname"
+
+                />
+
+            <TextView
+                android:id="@+id/lastname_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lastname"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/firstname_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_lastname" />
+
+            <TextView
+                android:id="@+id/email_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/lastname_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_email" />
+
+
+            <TextView
+                android:id="@+id/phonenumber_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phonenumber"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/email_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_phonenumber"
+                />
+
+            <TextView
+                android:id="@+id/address_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/phonenumber_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_address" />
+
+            <TextView
+                android:id="@+id/city_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/address_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_city" />
+
+            <TextView
+                android:id="@+id/state_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/city_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_state"
+
+                />
+
+            <TextView
+                android:id="@+id/zipcode_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zipcode"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/state_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_zipcode" />
+
+            <TextView
+                android:id="@+id/country_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="country"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/zipcode_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_country" />
+
+            <TextView
+                android:id="@+id/dob_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dob"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/country_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_dob" />
+
+            <TextView
+                android:id="@+id/age_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="age"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/dob_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_age" />
+
+
+            <TextView
+                android:id="@+id/occupation_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="occupation"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/age_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_occupation" />
+
+            <TextView
+                android:id="@+id/gender_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/occupation_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_gender" />
+
+            <TextView
+                android:id="@+id/maritalstatus_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="marital_status"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/gender_info"
+                app:layout_constraintTop_toTopOf="@id/semicolon_maritalstatus" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

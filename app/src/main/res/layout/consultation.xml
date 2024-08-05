@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/feedback_bg">
+
+
+        <!--        <include-->
+        <!--            android:id="@+id/header"-->
+        <!--            layout="@layout/admin_header"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/padding_15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/consultation_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/consult_board"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_7ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/recyclerview_horizontal"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_horizontal" />
+
+
+            <TextView
+                android:id="@+id/Floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/floor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/consultation_board"
+                app:layout_constraintTop_toBottomOf="@id/consultation_board" />
+
+            <FrameLayout
+                android:id="@+id/cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:background="@drawable/edit_boxes"
+                app:layout_constraintEnd_toStartOf="@+id/add_room_button"
+                app:layout_constraintStart_toStartOf="@+id/Floor"
+                app:layout_constraintTop_toBottomOf="@+id/Floor"
+                app:strokeColor="@color/grey">
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arrow_1"
+                    android:entries="@array/floor"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_room_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/room_button"
+                android:drawableLeft="@drawable/plus_icon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/add_room"
+                android:textColor="@color/edit_boxes"
+                android:textSize="@dimen/_6ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Floor" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/chip_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/cardview"
+                app:layout_constraintTop_toBottomOf="@+id/cardview"
+                app:strokeColor="#DCDCDC">
+
+
+                <TextView
+                    android:id="@+id/cardview_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/floor1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6ssp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.chip.ChipGroup
+
+                    android:id="@+id/chip_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <include
+            android:id="@+id/background"
+            layout="@layout/feedback_bottomcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
